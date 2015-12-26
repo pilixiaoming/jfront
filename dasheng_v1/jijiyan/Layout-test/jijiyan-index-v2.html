@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>吉吉燕</title>
+    <meta name="description" content="jijiyan">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="../../css/bootstrap-theme.min.css">
+    <!-- jQuery (necessary for Bootstrap'js JavaScript plugins) -->
+    <script src="../../js/jquery-2.1.4.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+    <script>
+        var homepageApp = angular.module('homepageApp', []);
+        homepageApp.controller('itemsCtrl', ['$scope', '$http', function (scope, http){
+            http.get('/dasheng_v1/jijiyan/resource/homepage.json').success(function(data) {
+                scope.homepage = data;
+            });
+        }]);
+    </script>
+    <style>
+        body {
+            padding-top: 70px;
+        }
+        .ratings {
+            color: #ffbe00;
+        }
+    </style>
+</head>
+
+<body ng-app="homepageApp" >
+<div ng-include="'header.html'"></div>
+<!--nav bar-->
+<nav class="navbar navbar-inverse navbar-fixed-top" role = "navigation" id="my-navbar">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="" class="navbar-brand">吉吉燕</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#feedback">Feedback</a>
+                <li><a href="#gallery">Gallery</a>
+                <li><a href="#features">Features</a>
+                <li><a href="#faq">Faq</a>
+                <li><a href="#contact">Contact us</a>
+            </ul>
+
+
+            <ul id="navBar-right" class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" style="margin-bottom:-5px" data-toggle="dropdown">
+                        <!--<img src="https://www.gravatar.com/avatar/d4b8d4101250aab5f52e0136dc4823bd?s=25" />&nbsp&nbsp-->yuandaxia
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/profile/">Profile</a></li>
+
+                        <li><a href="/subscription/">My Subscription</a></li>
+
+                        <li class="divider"></li>
+                        <li><a href="/progress/">My Progress</a></li>
+
+                        <li><a href="/discuss/user/yuandaxia">My Discuss</a></li>
+
+                        <li><a href="/session/">Manage Sessions</a></li>
+                        <!-- TODO:  Dashboard  -->
+                        <li><a href="/accounts/password/change/">Change Password</a></li>
+                        <li class="divider"></li>
+                        <li><a href="/accounts/logout/">Sign out</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="navbar-form navbar-right">
+                <a class="btn btn-primary" href="/accounts/signup">Sign up</a>
+                <a class="btn btn-default" href="/accounts/login/">Sign in</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<!--end of navbar-->
+
+<!--row container-->
+<div class="container" ng-controller="itemsCtrl">
+
+    <!--first row start-->
+    <div ng-include src="header.html"> </div>
+    <div class="row">
+        <div class="col-md-3">
+            <p class="lead">Shop Name</p>
+            <div class="list-group">
+                <a href="#" class="list-group-item active">Category 1</a>
+                <a href="#" class="list-group-item">Category 2</a>
+                <a href="#" class="list-group-item">Category 3</a>
+            </div>
+        </div>
+        <!--first row left end-->
+
+        <!--first row right start-->
+        <div ng-repeat="itemModel in homepage.itemModels" ng-if="$index < 3" class="col-md-3">
+            <div class="thumbnail">
+                <img src="http://placehold.it/800x500" alt="">
+
+                <div class="caption">
+
+                    <h4 class="pull-right">{{itemModel.price | currency}}</h4>
+                    <h4><a href="#">{{itemModel.title}}</a>
+                    </h4>
+
+                    <p>{{itemModel.description}}</p>
+                    <div>
+                        <p class="pull-right"> 12 reviews</p>
+                        <p class="ratings">
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+
+                        </p>
+
+                    </div>
+
+                    <p>
+                        <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More
+                        Info</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div><!--end of 1st row-->
+
+    <!--2nd row start-->
+    <div class="row" ng-repeat="itemModel in homepage.itemModels" ng-if="($index+1)%4==0 && $index>3">
+        <!--first row right start-->
+        <div ng-repeat="itemModel in homepage.itemModels" ng-if="$index >= $parent.$index && $index < $parent.$index+4" class="col-md-3">
+            <div class="thumbnail">
+                <img src="http://placehold.it/800x500" alt="">
+
+                <div class="caption">
+
+                    <h4 class="pull-right">{{itemModel.price | currency}}</h4>
+                    <h4><a href="#">{{itemModel.title}}</a>
+                    </h4>
+
+                    <p>{{itemModel.description}}</p>
+                    <div>
+                        <p class="pull-right"> 12 reviews</p>
+                        <p class="ratings">
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+
+                        </p>
+
+                    </div>
+
+                    <p>
+                        <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More
+                        Info</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--end of 2nd row-->
+</div>
+
+<div class="container">
+    <div class="btn-toolbar" role="toolbar" >
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default">1</button>
+            <button type="button" class="btn btn-default">2</button>
+            <button type="button" class="btn btn-default">3</button>
+            <button type="button" class="btn btn-default">......</button>
+            <button type="button" class="btn btn-default">99</button>
+            <button type="button" class="btn btn-default">100</button>
+            <button type="button" class="btn btn-default">next>></button>
+
+        </div>
+    </div>
+</div>
+<div class="container">
+    <hr>
+</div>
+<footer>
+    <div class="container text-center">
+        <p class="text-center">
+            <a href="#">Frequently Asked Questions</a> |
+            <a href="#">Terms of Service</a>
+        </p>
+
+        <!--privacy policy-->
+        <p class="text-center">
+            <a href="//www.iubenda.com/privacy-policy/156808" class="iubenda-white iubenda-embed"
+               title="Privacy Policy">Privacy Policy</a>
+            <script type="text/javascript">(function (w, d) {
+                var loader = function () {
+                    var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0];
+                    s.src = "//cdn.iubenda.com/iubenda.js";
+                    tag.parentNode.insertBefore(s, tag);
+                };
+                if (w.addEventListener) {
+                    w.addEventListener("load", loader, false);
+                } else if (w.attachEvent) {
+                    w.attachEvent("onload", loader);
+                } else {
+                    w.onload = loader;
+                }
+            })(window, document);</script>
+        </p>
+        <!--privacy policy end-->
+
+        <ul class="list-inline">
+            <li><a href="#">FaceBook</a></li>
+            <li><a href="#">Linkedin</a></li>
+            <li><a href="#">Youtube</a></li>
+        </ul>
+        <p>&copy; Copyright @ 2015 Jijiyan</p>
+    </div>
+</footer>
+
+</body>
+</html>

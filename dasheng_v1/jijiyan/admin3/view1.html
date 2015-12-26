@@ -1,0 +1,96 @@
+<!-- /col-3 -->
+<script>
+    $("button#submitAddress").click(function(){
+
+        $.ajax({
+            type: "get",
+            dataType: "json",
+            url: "https://api.smartystreets.com/street-address?auth-id=09ddd679-d791-04cf-abaa-aafa4a26da30&auth-token" +
+            "=jz0IeFtDeSo8nUl9Jlx3&street=1600+amphitheatre+pkwy&city=mountain+view&state=CA&candidates=1",
+            success:function(data){
+                console.log(data[0].delivery_line_1);
+                $("#recommendAddress").modal("show");
+                $("#modalBody").html(data[0].delivery_line_1);
+
+            }});
+
+    });
+
+</script>
+
+<div class="col-sm-10">
+
+
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-2">
+            <form role="form">
+                <h2>
+                    <small>Enter Address</small>
+                </h2>
+                <hr class="colorfullline">
+
+                <div class="row form-group">
+                    <div class="col-xs-12">
+                        <label class="control-label">Address Line 1</label>
+                        <input type="text" name="display_name" id="display_name"
+                               class="form-control input-lg" placeholder="Address Line 1">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-xs-12">
+                        <label class="control-label">Address Line 2</label>
+                        <input type="text" name="display_name" id="display_name"
+                               class="form-control input-lg" placeholder="Address Line 2">
+                    </div>
+                </div>
+
+                <div class="row form-group">
+                    <div class="col-xs-4">
+                        <label class="control-label">City</label>
+                        <input type="text" name="display_name" id="display_name"
+                               class="form-control input-lg" placeholder="City">
+                    </div>
+                    <div class="col-xs-4">
+                        <label class="control-label">State</label>
+                        <input type="text" name="display_name" id="display_name"
+                               class="form-control input-lg" placeholder="State">
+                    </div>
+                    <div class="col-xs-4">
+                        <label class="control-label">Zip Code</label>
+                        <input type="text" name="display_name" id="display_name"
+                               class="form-control input-lg" placeholder="Zip Code">
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <button id="submitAddress" type="button" class="btn btn-primary btn-lg col-xs-12 col-md-6 col-md-offset-3" data-toggle="modal">
+                        Launch demo modal
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</div>
+<!--/col-span-9-->
+
+<!-- Modal -->
+<div class="modal fade" id="recommendAddress" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div id = "modalBody" class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>吉吉燕</title>
+    <meta name="description" content="jijiyan">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+    <!-- jQuery (necessary for Bootstrap'js JavaScript plugins) -->
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script></script>
+    <style>
+        body {
+            padding-top: 30px;
+        }
+
+        .ratings {
+            color: #ffbe00;
+        }
+
+        .colorfullline {
+            height: 5px;
+            border-top: 0;
+            background: #c4e17f;
+            border-radius: 5px;
+            background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+            background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+            background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+            background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+        }
+
+        .bs-wizard {margin-top: 40px;}
+
+        /*Form Wizard*/
+        .bs-wizard {border-bottom: solid 1px #e0e0e0; padding: 0 0 10px 0;}
+        .bs-wizard > .bs-wizard-step {padding: 0; position: relative;}
+        .bs-wizard > .bs-wizard-step + .bs-wizard-step {}
+        .bs-wizard > .bs-wizard-step .bs-wizard-stepnum {color: #595959; font-size: 16px; margin-bottom: 5px;}
+        .bs-wizard > .bs-wizard-step .bs-wizard-info {color: #999; font-size: 14px;}
+        .bs-wizard > .bs-wizard-step > .bs-wizard-dot {position: absolute; width: 30px; height: 30px; display: block; background: #fbe8aa; top: 45px; left: 50%; margin-top: -15px; margin-left: -15px; border-radius: 50%;}
+        .bs-wizard > .bs-wizard-step > .bs-wizard-dot:after {content: ' '; width: 14px; height: 14px; background: #fbbd19; border-radius: 50px; position: absolute; top: 8px; left: 8px; }
+        .bs-wizard > .bs-wizard-step > .progress {position: relative; border-radius: 0px; height: 8px; box-shadow: none; margin: 20px 0;}
+        .bs-wizard > .bs-wizard-step > .progress > .progress-bar {width:0px; box-shadow: none; background: #fbe8aa;}
+        .bs-wizard > .bs-wizard-step.complete > .progress > .progress-bar {width:100%;}
+        .bs-wizard > .bs-wizard-step.active > .progress > .progress-bar {width:50%;}
+        .bs-wizard > .bs-wizard-step:first-child.active > .progress > .progress-bar {width:0%;}
+        .bs-wizard > .bs-wizard-step:last-child.active > .progress > .progress-bar {width: 100%;}
+        .bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot {background-color: #f5f5f5;}
+        .bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot:after {opacity: 0;}
+        .bs-wizard > .bs-wizard-step:first-child  > .progress {left: 0%; width: 100%;}
+        .bs-wizard > .bs-wizard-step:first-child  > .bs-wizard-dot {left: 0%; margin-left: 0;}
+        .bs-wizard > .bs-wizard-step:last-child  > .progress {width: 100%;}
+        .bs-wizard > .bs-wizard-step:last-child  > .bs-wizard-dot {left: 100%; margin-left: -30px;}
+        .bs-wizard > .bs-wizard-step.disabled a.bs-wizard-dot{ pointer-events: none; }
+    </style>
+</head>
+
+<body>
+
+<!--nav bar-->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="my-navbar">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="" class="navbar-brand">吉吉燕</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#feedback">Feedback</a>
+                <li><a href="#gallery">Gallery</a>
+                <li><a href="#features">Features</a>
+                <li><a href="#faq">Faq</a>
+                <li><a href="#contact">Contact us</a>
+            </ul>
+            <ul id="navBar-right" class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" style="margin-bottom:-5px" data-toggle="dropdown">
+                        <!--<img src="https://www.gravatar.com/avatar/d4b8d4101250aab5f52e0136dc4823bd?s=25" />&nbsp&nbsp-->
+                        yuandaxia
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/profile/">Profile</a></li>
+
+                        <li><a href="/subscription/">My Subscription</a></li>
+
+                        <li class="divider"></li>
+                        <li><a href="/progress/">My Progress</a></li>
+
+                        <li><a href="/discuss/user/yuandaxia">My Discuss</a></li>
+
+                        <li><a href="/session/">Manage Sessions</a></li>
+                        <!-- TODO:  Dashboard  -->
+                        <li><a href="/accounts/password/change/">Change Password</a></li>
+                        <li class="divider"></li>
+                        <li><a href="/accounts/logout/">Sign out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--end of navbar-->
+
+<div class="container">
+
+
+    <div class="row bs-wizard" style="border-bottom:0;">
+
+        <div class="col-xs-2 col-xs-offset-2 bs-wizard-step complete">
+            <div class="text-left bs-wizard-stepnum">Step 1</div>
+            <div class="progress"><div class="progress-bar"></div></div>
+            <a href="#" class="bs-wizard-dot"></a>
+            <div class="bs-wizard-info text-left">Order Online.</div>
+        </div>
+
+        <div class="col-xs-4 bs-wizard-step complete"><!-- complete -->
+            <div class="text-center bs-wizard-stepnum">Step 2</div>
+            <div class="progress"><div class="progress-bar"></div></div>
+            <a href="#" class="bs-wizard-dot"></a>
+            <div class="bs-wizard-info text-center">Seller Deliver Order To You Offline</div>
+        </div>
+
+        <div class="col-xs-2 bs-wizard-step active"><!-- complete -->
+            <div class="text-right bs-wizard-stepnum">Step 3</div>
+            <div class="progress"><div class="progress-bar"></div></div>
+            <a href="#" class="bs-wizard-dot"></a>
+            <div class="bs-wizard-info text-right">Enjoy your order!</div>
+        </div>
+
+    </div>
+
+
+
+
+
+</div>
+
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-xs-10 col-sm-8 col-md-6 col-xs-offset-1 col-sm-offset-2 col-md-offset-3">
+            <form role="form">
+                <h2 style="margin-top:15px;">Sign Up <small>It's free and always will be.</small></h2>
+
+                <hr class="colorfullline">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="First Name" tabindex="1">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="last_name" id="last_name" class="form-control input-lg" placeholder="Last Name" tabindex="2">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="display_name" id="display_name" class="form-control input-lg" placeholder="Display Name" tabindex="3">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address" tabindex="4">
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" tabindex="5">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-lg" placeholder="Confirm Password" tabindex="6">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        By clicking Sign up, you agree to the <a href="#">Terms and Conditions</a> and that you have
+                        read our <a href="#">Data Policy</a>, including our <a href="#">Cookie Use</a>.
+                    </div>
+                </div>
+
+                <hr class="colorfullline">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 col-md-offset-3"><input type="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!--end of register container-->
+
+<!--start of footer-->
+<div class="container">
+    <hr>
+</div>
+<footer>
+    <div class="container text-center">
+        <p class="text-center">
+            <a href="#">Frequently Asked Questions</a> |
+            <a href="#">Terms of Service</a>
+        </p>
+
+        <!--privacy policy-->
+        <p class="text-center">
+            <a href="//www.iubenda.com/privacy-policy/156808" class="iubenda-white iubenda-embed"
+               title="Privacy Policy">Privacy Policy</a>
+            <script type="text/javascript">(function (w, d) {
+                var loader = function () {
+                    var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0];
+                    s.src = "//cdn.iubenda.com/iubenda.js";
+                    tag.parentNode.insertBefore(s, tag);
+                };
+                if (w.addEventListener) {
+                    w.addEventListener("load", loader, false);
+                } else if (w.attachEvent) {
+                    w.attachEvent("onload", loader);
+                } else {
+                    w.onload = loader;
+                }
+            })(window, document);</script>
+        </p>
+        <!--privacy policy end-->
+
+        <ul class="list-inline">
+            <li><a href="#">FaceBook</a></li>
+            <li><a href="#">Linkedin</a></li>
+            <li><a href="#">Youtube</a></li>
+        </ul>
+        <p>&copy; Copyright @ 2015 Jijiyan</p>
+    </div>
+</footer>
+<!--end of footer-->
+</body>
+</html>
