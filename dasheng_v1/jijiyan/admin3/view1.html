@@ -1,20 +1,20 @@
 <!-- /col-3 -->
 <script>
-    $("button#submitAddress").click(function(){
-
-        $.ajax({
-            type: "get",
-            dataType: "json",
-            url: "https://api.smartystreets.com/street-address?auth-id=09ddd679-d791-04cf-abaa-aafa4a26da30&auth-token" +
-            "=jz0IeFtDeSo8nUl9Jlx3&street=1600+amphitheatre+pkwy&city=mountain+view&state=CA&candidates=1",
-            success:function(data){
-                console.log(data[0].delivery_line_1);
-                $("#recommendAddress").modal("show");
-                $("#modalBody").html(data[0].delivery_line_1);
-
-            }});
-
-    });
+//    $("button#submitAddress").click(function(){
+//
+//        $.ajax({
+//            type: "get",
+//            dataType: "json",
+//            url: "https://api.smartystreets.com/street-address?auth-id=09ddd679-d791-04cf-abaa-aafa4a26da30&auth-token" +
+//            "=jz0IeFtDeSo8nUl9Jlx3&street=1600+amphitheatre+pkwy&city=mountain+view&state=CA&candidates=1",
+//            success:function(data){
+//                console.log(data[0].delivery_line_1);
+//                $("#recommendAddress").modal("show");
+//                $("#modalBody").html(data[0].delivery_line_1);
+//
+//            }});
+//
+//    });
 
 </script>
 
@@ -62,10 +62,13 @@
                     </div>
                 </div>
 
-
+                {{addressResponse.abc}}
                 <div class="row">
-                    <button id="submitAddress" type="button" class="btn btn-primary btn-lg col-xs-12 col-md-6 col-md-offset-3" data-toggle="modal">
-                        Launch demo modal
+                    <button id="submitAddress" type="button"
+                            class="btn btn-primary btn-lg col-xs-12 col-md-6 col-md-offset-3" data-toggle="modal"
+                            data-target="#recommendAddress"
+                            data-ng-click="addAddress()">
+                    Launch demo modal
                     </button>
                 </div>
             </form>
@@ -86,6 +89,7 @@
             </div>
             <div id = "modalBody" class="modal-body">
                 ...
+                {{addressResponse.abc}}
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

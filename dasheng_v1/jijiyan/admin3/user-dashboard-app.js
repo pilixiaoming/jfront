@@ -7,7 +7,7 @@ userDashboardApp.config(function ($routeProvider) {
     $routeProvider
         .when('/view1',
             {
-                controller: 'AddressController',
+                controller: 'addressController',
                 templateUrl: 'view1.html'
             })
         //Define a route that has a route parameter in it (:customerID)
