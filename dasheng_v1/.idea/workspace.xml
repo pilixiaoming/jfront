@@ -24,37 +24,32 @@
       <file leaf-file-name="jijiyan-admin-v2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jijiyan/admin3/jijiyan-admin-v2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.823529">
-              <caret line="12" column="80" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
+            <state vertical-scroll-proportion="-8.203125">
+              <caret line="69" column="14" selection-start-line="69" selection-start-column="14" selection-end-line="69" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view1.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="view1.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jijiyan/admin3/view1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.640625">
-              <caret line="69" column="57" selection-start-line="69" selection-start-column="57" selection-end-line="69" selection-end-column="57" />
-              <folding />
+            <state vertical-scroll-proportion="0.75186104">
+              <caret line="100" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#i#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#address#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="customers.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AngularTest/AngularJSDemos/app/partials/customers.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.078125">
-              <caret line="22" column="52" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user-dashboard-app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="user-dashboard-app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jijiyan/admin3/user-dashboard-app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27972028">
+            <state vertical-scroll-proportion="0.0">
               <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding />
             </state>
@@ -65,8 +60,10 @@
         <entry file="file://$PROJECT_DIR$/jijiyan/admin3/controller/userAppController.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="46" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="46" />
-              <folding />
+              <caret line="35" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -75,7 +72,17 @@
         <entry file="file://$PROJECT_DIR$/jijiyan/admin3/service/userAppService.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+              <caret line="6" column="39" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customers.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AngularTest/AngularJSDemos/app/partials/customers.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.117647">
+              <caret line="19" column="49" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -85,7 +92,7 @@
         <entry file="file://$PROJECT_DIR$/AngularTest/AngularJSDemos/app/services/customersService.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="17" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="17" />
+              <caret line="7" column="61" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -144,17 +151,17 @@
         <option value="$PROJECT_DIR$/jijiyan/Layout-test/header.html" />
         <option value="$PROJECT_DIR$/jijiyan/Homepage/jijiyan-index-v2.html" />
         <option value="$PROJECT_DIR$/jijiyan/Layout-test/jijiyan-index-v2.html" />
-        <option value="$PROJECT_DIR$/jijiyan/admin3/modal.html" />
         <option value="$PROJECT_DIR$/AngularTest/AngularJSDemos/app/services/customersService.js" />
-        <option value="$PROJECT_DIR$/jijiyan/admin3/user-dashboard-app.js" />
         <option value="$PROJECT_DIR$/AngularTest/AngularJSDemos/app/controllers/controllers.js" />
         <option value="$PROJECT_DIR$/jijiyan/admin3/controller/userAppControllers.js" />
-        <option value="$PROJECT_DIR$/jijiyan/admin3/jijiyan-admin-v2.html" />
         <option value="$PROJECT_DIR$/jijiyan/admin3/service/addressResponse.json" />
         <option value="$PROJECT_DIR$/jijiyan/admin3/addressResponse.json" />
+        <option value="$PROJECT_DIR$/jijiyan/admin3/user-dashboard-app.js" />
+        <option value="$PROJECT_DIR$/jijiyan/admin3/jijiyan-admin-v2.html" />
+        <option value="$PROJECT_DIR$/jijiyan/admin3/service/userAppService.js" />
+        <option value="$PROJECT_DIR$/jijiyan/admin3/modal.html" />
         <option value="$PROJECT_DIR$/jijiyan/admin3/controller/userAppController.js" />
         <option value="$PROJECT_DIR$/jijiyan/admin3/view1.html" />
-        <option value="$PROJECT_DIR$/jijiyan/admin3/service/userAppService.js" />
       </list>
     </option>
   </component>
@@ -168,8 +175,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -232,8 +239,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -284,44 +289,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dasheng_v1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dasheng_v1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jijiyan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dasheng_v1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dasheng_v1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AngularTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -338,11 +309,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\git_pilixiaoming\jfront\dasheng_v1\jijiyan\admin3\img" />
       <recent name="E:\git_pilixiaoming\jfront\dasheng_v1\jijiyan\admin3\service" />
       <recent name="E:\git_pilixiaoming\jfront\dasheng_v1\jijiyan\admin3\controller" />
       <recent name="E:\webstorm_workspace\dasheng_v1\jijiyan\Layout-test" />
       <recent name="E:\webstorm_workspace\dasheng_v1\jijiyan" />
-      <recent name="E:\webstorm_workspace\dasheng_v1\jijiyan\Homepage" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\git_pilixiaoming\jfront\dasheng_v1\jijiyan\admin3" />
@@ -352,11 +323,8 @@
       <recent name="E:\webstorm_workspace\dasheng_v1\css-admin" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.jijiyan-admin-v2.html">
+  <component name="RunManager" selected="JavaScript Debug.modal.html">
     <configuration default="false" name="jijiyan-admin-v2.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/dasheng_v1/jijiyan/admin3/jijiyan-admin-v2.html">
-      <method />
-    </configuration>
-    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/dasheng_v1/AngularTest/AngularJSDemos/index.html">
       <method />
     </configuration>
     <configuration default="false" name="CustomerManagementApp.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/dasheng_v1/AngularTest/AngularJSDemos/CustomerManagementApp.html">
@@ -366,6 +334,9 @@
       <method />
     </configuration>
     <configuration default="false" name="userAppController.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="userAppController.js" working-dir="$PROJECT_DIR$/jijiyan/admin3/controller">
+      <method />
+    </configuration>
+    <configuration default="false" name="modal.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/dasheng_v1/jijiyan/admin3/modal.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -408,18 +379,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.jijiyan-admin-v2.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.CustomerManagementApp.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.view1.html" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.userAppController.js" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.CustomerManagementApp.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.view1.html" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.userAppController.js" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.modal.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.jijiyan-admin-v2.html" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.userAppController.js" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.view1.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.CustomerManagementApp.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.modal.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.jijiyan-admin-v2.html" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.userAppController.js" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.view1.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.CustomerManagementApp.html" />
       </list>
     </recent_temporary>
   </component>
@@ -446,20 +417,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23287672" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18675596" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.49789253" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5021075" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28108108" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28077754" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.49789253" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19567567" sideWeight="0.49789253" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1921824" sideWeight="0.49789253" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -497,13 +468,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jijiyan/admin2/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jijiyan/admin2/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -759,13 +723,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jijiyan/admin3/modal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-35.294117">
-          <caret line="57" column="37" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AngularTest/AngularJSDemos/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.294118">
@@ -777,7 +734,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="52" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -789,50 +745,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AngularTest/AngularJSDemos/app/controllers/controllers.js">
+    <entry file="file://$PROJECT_DIR$/jijiyan/admin2/jijiyan-admin-v2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13950893">
-          <caret line="22" column="14" selection-start-line="20" selection-start-column="4" selection-end-line="24" selection-end-column="5" />
-          <folding />
+        <state vertical-scroll-proportion="0.6240822">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jijiyan/admin3/addressResponse.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.04152824">
+        <state vertical-scroll-proportion="0.028968714">
           <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jijiyan/admin2/jijiyan-admin-v2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6240822">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jijiyan/admin3/view1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.640625">
-          <caret line="69" column="57" selection-start-line="69" selection-start-column="57" selection-end-line="69" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularTest/AngularJSDemos/app/partials/customers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.078125">
-          <caret line="22" column="52" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jijiyan/admin3/jijiyan-admin-v2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.823529">
-          <caret line="12" column="80" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
           <folding />
         </state>
       </provider>
@@ -840,7 +763,31 @@
     <entry file="file://$PROJECT_DIR$/AngularTest/AngularJSDemos/app/services/customersService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="17" />
+          <caret line="7" column="61" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularTest/AngularJSDemos/app/partials/customers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.117647">
+          <caret line="19" column="49" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jijiyan/admin2/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="853.3929">
+          <caret line="4" column="103714" selection-start-line="4" selection-start-column="103714" selection-end-line="4" selection-end-column="103714" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularTest/AngularJSDemos/app/controllers/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8029979">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -848,7 +795,31 @@
     <entry file="file://$PROJECT_DIR$/jijiyan/admin3/service/userAppService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <caret line="6" column="39" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jijiyan/admin3/jijiyan-admin-v2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.203125">
+          <caret line="69" column="14" selection-start-line="69" selection-start-column="14" selection-end-line="69" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jijiyan/admin3/modal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44341803">
+          <caret line="59" column="53" selection-start-line="59" selection-start-column="53" selection-end-line="59" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jijiyan/admin3/user-dashboard-app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -856,16 +827,23 @@
     <entry file="file://$PROJECT_DIR$/jijiyan/admin3/controller/userAppController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="46" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="46" />
-          <folding />
+          <caret line="35" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jijiyan/admin3/user-dashboard-app.js">
+    <entry file="file://$PROJECT_DIR$/jijiyan/admin3/view1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27972028">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
+        <state vertical-scroll-proportion="0.75186104">
+          <caret line="100" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#address#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
