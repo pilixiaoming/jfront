@@ -13,7 +13,7 @@ userDashboardApp.config(function ($routeProvider) {
         //Define a route that has a route parameter in it (:customerID)
         .when('/view2',
             {
-              //  controller: 'CustomersController',
+                controller: 'addressController',
                 templateUrl: 'view2.html'
             })
         .otherwise({ redirectTo: '/view1' });

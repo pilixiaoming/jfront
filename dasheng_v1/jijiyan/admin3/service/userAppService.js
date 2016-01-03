@@ -9,7 +9,7 @@
             + appendParam("postalCode", postalCode);
         $http({
                 method: 'GET',
-                url: endpoint,
+                url: 'addressResponse.json',
                 cache: false
             }
         ).then(successCallback, errorCallback);

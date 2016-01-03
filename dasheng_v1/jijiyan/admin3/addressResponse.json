@@ -1,3 +1,9 @@
 {
-  "abc" : "hahahaha"
+  "country": "hahahaha",
+  "addressLines": [
+    "550 Harley Dr #3",
+    "Columbus",
+    "OH 43202",
+    "USA"
+  ]
 }

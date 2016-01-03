@@ -1,66 +1,97 @@
+<style type="text/css">
+    .vcenter {
+        display: inline-block;
+        vertical-align: middle;
+        float: none;
+    }
+</style>
 <div class="col-sm-10">
-
 
     <div class="row">
         <div class="col-sm-6 col-sm-offset-2">
-            <form role="form">
+            <form name="addAddressForm" role="form">
                 <h2>
-                    <small>Enter Address</small>
+                    <small>Add a new address</small>
                 </h2>
-                <hr class="colorfullline">
+                <hr>
+                <div class="form-group" ng-class="{'has-error': addAddressForm.country.$touched && addAddressForm.country.$invalid}">
+                    <label class="control-label">Country<span>*</span></label>
+                    <select ng-init="newAddress.country = countryList[0].code"
+                            ng-model="newAddress.country" class="form-control"
+                            ng-options="country.code as country.name for country in countryList"
+                            name="country"></select>
+                    <div ng-show="addAddressForm.country.$touched && addAddressForm.country.$invalid">
+                        <span class="text-danger">Please select a country</span>
+                    </div>
+                </div>
+                <div class="form-group" ng-class="{'has-error': addAddressForm.addressLine1.$touched && addAddressForm.addressLine1.$invalid}">
+                    <label class="control-label">Address line 1<span>*</span></label>
+                    <input name="addressLine1" data-ng-model="newAddress.addressLine1" type="text" class="form-control"
+                           placeholder="Street address, P.O. box, company name, etc." required>
+                    <div ng-show="addAddressForm.addressLine1.$touched && addAddressForm.addressLine1.$invalid">
+                        <span class="text-danger">Please enter a valid address line 1</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Address line 2<span class="text-muted small"> (optional)</span></label>
+                    <input name="addressLine2" data-ng-model="newAddress.addressLine2" type="text" class="form-control"
+                           placeholder="Apartment, suite, unit, building, floor, etc.">
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-4" ng-class="{'has-error': addAddressForm.city.$touched && addAddressForm.city.$invalid}">
+                        <label class="control-label">City<span>*</span></label>
+                        <input name="city" data-ng-model="newAddress.city" type="text" class="form-control"
+                               ng-trim="true" ng-pattern="/^[a-zA-Z]+(?:[\s-][a-zA-Z]+)*$/" required>
 
-                <div class="row form-group">
-                    <div class="col-xs-8">
-                        <label class="control-label">Country</label>
-                        <input data-ng-model="newAddress.country" type="text"
-                               class="form-control input-lg" placeholder="Country">
+                        <div ng-show="addAddressForm.city.$touched && addAddressForm.city.$invalid">
+                            <span class="text-danger">Please enter a valid city.</span>
+                        </div>
                     </div>
-                </div>
-                <div class="row form-group">
-                    <div class="col-xs-12">
-                        <label class="control-label">Address Line 1</label>
-                        <input data-ng-model="newAddress.addressLine1" type="text"
-                               class="form-control input-lg" placeholder="Address Line 1">
-                    </div>
-                </div>
-                <div class="row form-group">
-                    <div class="col-xs-12">
-                        <label class="control-label">Address Line 2</label>
-                        <input data-ng-model="newAddress.addressLine2" type="text"
-                               class="form-control input-lg" placeholder="Address Line 2">
-                    </div>
-                </div>
+                    <div class="col-md-4" ng-class="{'has-error': addAddressForm.state.$touched && addAddressForm.state.$invalid}">
+                        <label class="control-label">State<span>*</span></label>
+                        <!--<input data-ng-model="newAddress.stateOrProvince" type="text" class="form-control">-->
+                        <!--<select data-ng-model="newAddress.stateOrProvince" class="form-control" >-->
+                            <!--<option ng-repeat="state in stateList" value="state.abbreviation">-->
+                                <!--{{state.name}}-->
+                            <!--</option>-->
 
-                <div class="row form-group">
-                    <div class="col-xs-4">
-                        <label class="control-label">City</label>
-                        <input data-ng-model="newAddress.city" type="text"
-                               class="form-control input-lg" placeholder="City">
+                        <!--</select>-->
+                        <select name="state" ng-init="newAddress.stateOrProvince = stateList[0].abbreviation"
+                                ng-model="newAddress.stateOrProvince" class="form-control"
+                                ng-options="state.abbreviation as state.name for state in stateList"
+                                required></select>
+                        <div ng-show="addAddressForm.state.$touched && addAddressForm.state.$invalid">
+                            <span class="text-danger">Please select a state.</span>
+                        </div>
+
                     </div>
-                    <div class="col-xs-4">
-                        <label class="control-label">State</label>
-                        <input data-ng-model="newAddress.stateOrProvince" type="text"
-                               class="form-control input-lg" placeholder="State">
-                    </div>
-                    <div class="col-xs-4">
-                        <label class="control-label">Zip Code</label>
-                        <input data-ng-model="newAddress.postalCode" type="text"
-                               class="form-control input-lg" placeholder="Zip Code">
+                    <div class="col-md-4" ng-class="{'has-error': addAddressForm.postalCode.$touched && addAddressForm.postalCode.$invalid}">
+                        <label class="control-label">ZIP code<span>*</span></label>
+                        <input name="postalCode" data-ng-model="newAddress.postalCode" type="text" class="form-control"
+                               ng-pattern="/^\d{5}(?:[-\s]\d{4})?$/" required>
+
+                        <div ng-show="addAddressForm.postalCode.$touched && addAddressForm.postalCode.$invalid">
+                            <span class="text-danger">Please enter a valid ZIP code.</span>
+                        </div>
                     </div>
                 </div>
-
+                <hr>
                 <div class="row">
-                    <button id="submitAddress" type="button"
-                            class="btn btn-primary btn-lg col-xs-12 col-md-6 col-md-offset-3" data-toggle="modal"
+                    <a href="" class="col-md-2 col-md-offset-7 vcenter" data-ng-click="clearAddressInput()">Clear all</a>
+
+                    <button type="button"
+                            class="btn btn-primary col-md-2 vcenter" data-toggle="modal"
                             data-target="#recommendAddress"
-                            data-ng-click="validateAddress()">
+                            data-ng-disabled="!newAddress.country || !newAddress.addressLine1
+                            || !newAddress.city || !newAddress.stateOrProvince || !newAddress.postalCode"
+                            data-ng-click="validateAddress()"
+                            data-content="Please enter valid address to enable this button">
                         Submit
                     </button>
                 </div>
             </form>
         </div>
     </div>
-
 
 </div>
 <!--/col-span-9-->
@@ -86,35 +117,41 @@
                     <i class="fa fa-spinner fa-3x fa-pulse"></i>
                 </div>
             </div>
-            <div class="modal-body row" ng-show="recommendedAddress.country">
-                <div class="col-xs-5 col-xs-offset-1">
-                    <div style="margin-bottom: 18px; font-size: medium">You provided</div>
-                    <address>
-                        <div>{{newAddress.addressLine1}} {{newAddress.addressLine2}}</div>
-                        <div>{{newAddress.city}}</div>
-                        <div>{{newAddress.stateOrProvince}} {{newAddress.postalCode}}</div>
-                        <div>{{newAddress.country}}</div>
-                    </address>
-                    <button type="button" class="btn btn-default" data-dismiss="modal"
-                            data-ng-click="addAddress()">Use this address
-                    </button>
+            <div class="modal-body" ng-show="recommendedAddress.country">
+                <div class="row">
+                    <div class="col-xs-5 col-xs-offset-1 text-muted">
+                        <div style="margin-bottom: 18px; font-size: medium">You provided</div>
+                        <address>
+                            <div>{{newAddress.addressLine1}} {{newAddress.addressLine2}}</div>
+                            <div>{{newAddress.city}}</div>
+                            <div>{{newAddress.stateOrProvince}} {{newAddress.postalCode}}</div>
+                            <div>{{newAddress.country}}</div>
+                        </address>
+                        <!--<button type="button" class="btn btn-default disabled">Use this address-->
+                        <!--</button>-->
 
-                </div>
-                <div class="col-xs-1">
-                    <span class="glyphicon glyphicon-hand-right fa-lg"></span>
-                </div>
-                <div class="col-xs-5">
-                    <div style="margin-bottom: 18px; font-size: medium">We recommend</div>
-                    <address style="font-weight: bold">
-                        <div ng-repeat="addressLine in recommendedAddress.addressLines">
-                            {{addressLine}}
-                        </div>
-                    </address>
-                    <button type="button" class="btn btn-primary" data-dismiss="modal"
-                            data-ng-click="addAddress()">Use this address
-                    </button>
+                    </div>
+                    <div class="col-xs-1">
+                        <a href="" class="glyphicon glyphicon-hand-right fa-lg" data-toggle="tooltip"
+                           title="If recommended address is not accurate enough, please click 'Go Back' and modify your input."></a>
+                        <!--<i class="fa fa-lightbulb-o fa-2x"></i>-->
+                    </div>
+                    <div class="col-xs-5">
+                        <div style="margin-bottom: 18px; font-size: medium">We recommend</div>
+                        <address style="font-weight: bold">
+                            <div ng-repeat="addressLine in recommendedAddress.addressLines">
+                                {{addressLine}}
+                            </div>
+                        </address>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal"
+                                data-ng-click="addAddress()">Use this address
+                        </button>
 
+                    </div>
                 </div>
+                <!--<div class="row col-xs-offset-1">-->
+                    <!--<span class="small text-info"></span>-->
+                <!--</div>-->
             </div>
 
             <div class="modal-footer">

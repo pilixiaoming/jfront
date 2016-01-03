@@ -1,0 +1,176 @@
+<style type="text/css">
+    .vcenter {
+        display: inline-block;
+        vertical-align: middle;
+        float: none;
+    }
+</style>
+<div class="col-sm-10">
+
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-2">
+            <form role="form">
+                <div class="form-group">
+                    <label>Country</label>
+                    <input type="text" class="form-control" placeholder="Enter Country">
+                </div>
+                <div class="form-group">
+                    <label>Street address</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Street address2</label>
+                    <input type="text" class="form-control" placeholder="Apartment, Suite, Floor, etc.">
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-4">
+                        <label>City</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-4">
+                        <label>State</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-4">
+                        <label>ZIP code</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <a href="" class="col-md-2 col-md-offset-7 vcenter" data-ng-click="clearAddressInput()">Clear all</a>
+
+                    <button type="button"
+                            class="btn btn-primary col-md-2 vcenter" data-toggle="modal"
+                            data-target="#recommendAddress"
+                            data-ng-click="validateAddress()">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-2">
+            <form role="form">
+                <h2>
+                    <small>Enter Address</small>
+                </h2>
+                <hr class="colorfullline">
+
+                <div class="row form-group">
+                    <div class="col-xs-8">
+                        <label class="control-label">Country</label>
+                        <input data-ng-model="newAddress.country" type="text"
+                               class="form-control input-lg" placeholder="Country">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-xs-12">
+                        <label class="control-label">Address Line 1</label>
+                        <input data-ng-model="newAddress.addressLine1" type="text"
+                               class="form-control input-lg" placeholder="Address Line 1">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-xs-12">
+                        <label class="control-label">Address Line 2</label>
+                        <input data-ng-model="newAddress.addressLine2" type="text"
+                               class="form-control input-lg" placeholder="Address Line 2">
+                    </div>
+                </div>
+
+                <div class="row form-group">
+                    <div class="col-xs-4">
+                        <label class="control-label">City</label>
+                        <input data-ng-model="newAddress.city" type="text"
+                               class="form-control input-lg" placeholder="City">
+                    </div>
+                    <div class="col-xs-4">
+                        <label class="control-label">State</label>
+                        <input data-ng-model="newAddress.stateOrProvince" type="text"
+                               class="form-control input-lg" placeholder="State">
+                    </div>
+                    <div class="col-xs-4">
+                        <label class="control-label">Zip Code</label>
+                        <input data-ng-model="newAddress.postalCode" type="text"
+                               class="form-control input-lg" placeholder="Zip Code">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <button id="submitAddress" type="button"
+                            class="btn btn-primary btn-lg col-xs-12 col-md-6 col-md-offset-3" data-toggle="modal"
+                            data-target="#recommendAddress"
+                            data-ng-click="validateAddress()">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</div>
+<!--/col-span-9-->
+
+<!-- Modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="recommendAddress" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                        data-ng-click="cancelAddress()"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">
+                    <i class="glyphicon glyphicon-info-sign" style="color:#337ab7; padding-right:10px">
+                    </i> Please confirm you address
+                </h4>
+            </div>
+            <div class="modal-body row" style="margin: 80px" ng-show="!recommendedAddress.country">
+                <div class="col-xs-2 col-xs-offset-5">
+                    <i class="fa fa-spinner fa-3x fa-pulse"></i>
+                </div>
+            </div>
+            <div class="modal-body row" ng-show="recommendedAddress.country">
+                <div class="col-xs-5 col-xs-offset-1">
+                    <div style="margin-bottom: 18px; font-size: medium">You provided</div>
+                    <address>
+                        <div>{{newAddress.addressLine1}} {{newAddress.addressLine2}}</div>
+                        <div>{{newAddress.city}}</div>
+                        <div>{{newAddress.stateOrProvince}} {{newAddress.postalCode}}</div>
+                        <div>{{newAddress.country}}</div>
+                    </address>
+                    <button type="button" class="btn btn-default" data-dismiss="modal"
+                            data-ng-click="addAddress()">Use this address
+                    </button>
+
+                </div>
+                <div class="col-xs-1">
+                    <span class="glyphicon glyphicon-hand-right fa-lg"></span>
+                </div>
+                <div class="col-xs-5">
+                    <div style="margin-bottom: 18px; font-size: medium">We recommend</div>
+                    <address style="font-weight: bold">
+                        <div ng-repeat="addressLine in recommendedAddress.addressLines">
+                            {{addressLine}}
+                        </div>
+                    </address>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"
+                            data-ng-click="addAddress()">Use this address
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <a href="" class="pull-left" data-dismiss="modal" data-ng-click="cancelAddress()">Go Back</a>
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            </div>
+        </div>
+    </div>
+</div>
